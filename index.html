@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2manatliqsayt</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+
+  background-image: url("IMG_20250519_095639_890.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* BACKGROUND VIDEO */
+video.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  filter: blur(6px) brightness(0.6);
+  transform: scale(1.05);
+}
+
+/* DARK OVERLAY */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+}
+
+/* CENTER BOX */
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: min(90%, 650px);
+  padding: 25px;
+
+  background: rgba(25,25,25,0.55);
+  backdrop-filter: blur(14px);
+
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+/* CODE STYLE */
+.code {
+  color: #c792ea;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.keyword { color: #82aaff; }
+.string { color: #c3e88d; }
+.func { color: #f78c6c; }
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .box {
+    padding: 18px;
+    font-size: 13px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- BACKGROUND VIDEO -->
+
+
+<div class="overlay"></div>
+
+<!-- CENTER CONTENT -->
+<div class="box">
+<pre class="code">
+<span class="keyword">def</span> <span class="func">forget_you</span>():
+    memories=[<span class="string">"Once upon a time...</span>]
+    memoires.clear()
+    <span class="keyword">return</span> <span class="func">print</span>(<span class="string">"Keçmiş geridə qaldı, önəmli olan gələcəyə baxmaq və qarşına 
+      hədəflər qoymaqdır. Mən inanıram ki, sən gələcəkdə öz hədəflərinə çatacaqsan.
+      Sənə bu yolda yeni, yaxşı dostlar və rahat, xoş bir həyat arzulayıram."</span>)
+
+<span class="keyword">try</span>:
+    forget_you()
+<span class="keyword">except</span>:
+    <span class="func">print</span>(<span class="string">"System denied:Impossible"</span>)
+</pre>
+</div>
+
+</body>
+</html>
